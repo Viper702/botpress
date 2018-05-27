@@ -69,7 +69,7 @@ module.exports = {
   },
 
   init: async (bp, configurator) => {
-    checkVersion(bp, __dirname)
+    checkVersion(bp, global.botpressPath)
 
     bp.middlewares.register({
       name: 'hitl.captureInMessages',
